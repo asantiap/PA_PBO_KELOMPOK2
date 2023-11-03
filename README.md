@@ -64,6 +64,50 @@ Eksekusi pernyataan SQL dengan executeUpdate() dan mengembalikan keberhasilan op
 Jika terjadi kesalahan saat eksekusi, akan menampilkan pesan kesalahan (error) melalui displayErrors(ex).
 Terakhir, koneksi database ditutup, baik operasi berhasil maupun tidak.
 
+#### CLASS OBAT
+![image](https://github.com/asantiap/PA_PBO_KELOMPOK2/assets/121863819/1c0a6484-456a-4dc2-9f9d-ce09b2ed295b)
+
+Kelas Obat adalah entitas yang merepresentasikan informasi tentang obat di dalam sistem.
+Memiliki beberapa atribut untuk menyimpan informasi, seperti id (ID obat), nama_obat (nama obat), stok (jumlah stok obat), tanggal_kadaluarsa (tanggal kadaluarsa obat), dan apoteker_id_apoteker (ID apoteker yang terkait).
+Kelas ini meng-extends kelas Database, yang mungkin berisi fungsionalitas untuk berinteraksi dengan database.
+
+![image](https://github.com/asantiap/PA_PBO_KELOMPOK2/assets/121863819/9d206193-e929-411b-834e-c61497375216)
+
+Bertanggung jawab untuk menambahkan data obat baru ke dalam database.
+Membuka koneksi ke database.
+Menyiapkan pernyataan SQL INSERT untuk memasukkan data ke dalam tabel "obat".
+Melakukan konversi dari format tanggal (dalam string) ke java.sql.Date untuk kolom tanggal_kadaluarsa.
+Mengatur nilai parameter dalam pernyataan yang disiapkan menggunakan PreparedStatement.
+Eksekusi pernyataan SQL menggunakan executeUpdate() dan mengembalikan keberhasilan operasi tersebut dalam bentuk boolean.
+Jika terjadi kesalahan saat eksekusi, akan menampilkan pesan kesalahan (error).
+
+![image](https://github.com/asantiap/PA_PBO_KELOMPOK2/assets/121863819/c63e4204-1539-4199-a15e-0cab9c175c31)
+
+Melakukan pencarian data obat berdasarkan kolom (columnName) dan nilai (value) yang diberikan.
+Membuka koneksi ke database.
+Membuat pernyataan SQL SELECT untuk mencari data obat berdasarkan kolom yang ditentukan.
+Mengatur nilai parameter dalam pernyataan yang disiapkan menggunakan PreparedStatement.
+Mengeksekusi pernyataan SQL dengan executeQuery().
+Jika data ditemukan, mengisi nilai atribut obat dengan nilai dari database dan mengembalikan keberhasilan operasi dalam bentuk boolean.
+
+![image](https://github.com/asantiap/PA_PBO_KELOMPOK2/assets/121863819/9d53dfcd-33b9-42cf-ac18-14bed944b058)
+
+Bertanggung jawab untuk memperbarui data obat yang sudah ada dalam database.
+Membuka koneksi ke database.
+Menyiapkan pernyataan SQL UPDATE untuk memperbarui data dalam tabel "obat" berdasarkan ID obat.
+Mengatur nilai parameter dalam pernyataan yang disiapkan menggunakan PreparedStatement.
+Eksekusi pernyataan SQL menggunakan executeUpdate() dan mengembalikan keberhasilan operasi tersebut dalam bentuk boolean.
+Jika terjadi kesalahan saat eksekusi, akan menampilkan pesan kesalahan (error).
+
+![image](https://github.com/asantiap/PA_PBO_KELOMPOK2/assets/121863819/33ac09d8-02d0-4ef1-a5a2-4034b6ba9bcf)
+
+Bertanggung jawab untuk menghapus data obat dari database berdasarkan ID obat yang diberikan.
+Membuka koneksi ke database.
+Menyiapkan pernyataan SQL DELETE untuk menghapus data dari tabel "obat" berdasarkan ID obat.
+Mengatur nilai parameter dalam pernyataan yang disiapkan menggunakan PreparedStatement.
+Eksekusi pernyataan SQL menggunakan executeUpdate() dan mengembalikan keberhasilan operasi tersebut dalam bentuk boolean.
+Jika terjadi kesalahan saat eksekusi, akan menampilkan pesan kesalahan (error).
+
 #### CLASS CAIR
 ![image](https://github.com/asantiap/PA_PBO_KELOMPOK2/assets/121863819/9edb5b5c-2b72-4dfb-af05-7c61bbbb8a4a)
 
