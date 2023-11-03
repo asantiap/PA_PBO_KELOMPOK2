@@ -23,12 +23,46 @@
 
 #### CLASS DATABASE
 ![image](https://github.com/asantiap/PA_PBO_KELOMPOK2/assets/121863819/f4a1a620-54ab-4650-8245-e69548b7bb0e)
+
 Gambar diatas merupakan librari untuk menghubungkann dengan  database
 ![image](https://github.com/asantiap/PA_PBO_KELOMPOK2/assets/121863819/1d6d790a-2bae-411f-9d81-d48c8c0ffee2)
 ![image](https://github.com/asantiap/PA_PBO_KELOMPOK2/assets/121863819/1815fe9f-24fe-43b7-ad52-53c1549ed4b5)
 ![image](https://github.com/asantiap/PA_PBO_KELOMPOK2/assets/121863819/780191fd-77c4-467f-a185-db9559307cd0)
 ![image](https://github.com/asantiap/PA_PBO_KELOMPOK2/assets/121863819/af166d37-f0e8-4786-ae96-4591723a3d00)
 ![image](https://github.com/asantiap/PA_PBO_KELOMPOK2/assets/121863819/7172094b-74b8-4b31-a892-b39aec82f237)
+
+#### CLASS APOTEKER
+![image](https://github.com/asantiap/PA_PBO_KELOMPOK2/assets/121863819/2773d307-3a45-4078-9ec3-22e89be94948)
+
+![image](https://github.com/asantiap/PA_PBO_KELOMPOK2/assets/121863819/b45e785a-dfec-4332-8f9a-1b2aecdc086a)
+
+Metode ini bertanggung jawab untuk membuat data apoteker baru ke dalam database.
+Proses dimulai dengan membuka koneksi ke database.
+Membuat pernyataan SQL INSERT untuk memasukkan data ke dalam tabel "Apoteker".
+Mengatur nilai parameter dalam pernyataan yang telah disiapkan dengan menggunakan PreparedStatement.
+Eksekusi pernyataan SQL menggunakan executeUpdate() dan mengembalikan keberhasilan operasi tersebut dalam bentuk boolean.
+Jika ada kesalahan saat eksekusi, akan menampilkan pesan kesalahan (error) melalui displayErrors(ex).
+Akhirnya, koneksi database ditutup, baik operasi berhasil maupun tidak.
+
+![image](https://github.com/asantiap/PA_PBO_KELOMPOK2/assets/121863819/db76e33c-1584-4b45-b840-33964d17294c)
+
+Metode ini digunakan untuk memperbarui data apoteker yang sudah ada dalam database.
+Memulai dengan membuka koneksi ke database.
+Membuat pernyataan SQL UPDATE untuk memperbarui data dalam tabel "Apoteker" berdasarkan ID yang diberikan.
+Mengatur nilai parameter dalam pernyataan yang telah disiapkan menggunakan PreparedStatement.
+Eksekusi pernyataan SQL dengan executeUpdate() dan mengembalikan keberhasilan operasi tersebut dalam bentuk boolean.
+Jika ada kesalahan saat eksekusi, akan menampilkan pesan kesalahan (error) melalui displayErrors(ex).
+Terakhir, koneksi database ditutup, baik operasi berhasil maupun tidak.
+
+![image](https://github.com/asantiap/PA_PBO_KELOMPOK2/assets/121863819/21412f9f-7168-4990-8e07-15155559c8b5)
+
+Metode ini bertanggung jawab untuk menghapus data apoteker berdasarkan ID yang diberikan.
+Membuka koneksi ke database.
+Membuat pernyataan SQL DELETE untuk menghapus data dari tabel "Apoteker" berdasarkan ID.
+Mengatur nilai parameter dalam pernyataan yang telah disiapkan menggunakan PreparedStatement.
+Eksekusi pernyataan SQL dengan executeUpdate() dan mengembalikan keberhasilan operasi tersebut dalam bentuk boolean.
+Jika terjadi kesalahan saat eksekusi, akan menampilkan pesan kesalahan (error) melalui displayErrors(ex).
+Terakhir, koneksi database ditutup, baik operasi berhasil maupun tidak.
 
 #### CLASS RESEP
 ![image](https://github.com/asantiap/PA_PBO_KELOMPOK2/assets/121863819/06d81fed-65cf-450d-bd84-3ab78b39dc93)
@@ -47,6 +81,5 @@ Gambar diatas merupakan Deklarasi metode delete() yang akan menghapus rekaman pa
 ![image](https://github.com/asantiap/PA_PBO_KELOMPOK2/assets/121863819/4aa47507-74a4-48c2-9d09-96d5da569d0d)
 ![image](https://github.com/asantiap/PA_PBO_KELOMPOK2/assets/121863819/80dbbfc7-9f0f-49da-a419-8729965e61cf)
 ![image](https://github.com/asantiap/PA_PBO_KELOMPOK2/assets/121863819/09fc99d7-6916-41f2-a172-5bc1def727c3)
-
 
 
