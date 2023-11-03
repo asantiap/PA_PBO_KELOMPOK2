@@ -20,6 +20,16 @@
 ![image](https://github.com/asantiap/PA_PBO_KELOMPOK2/assets/121863819/ef193784-64b1-4c01-b1db-280b95b81344)
 	Kelas teratas adalah Obat, yang mewakili semua obat yang tersedia di sistem. Kelas tingkat kedua adalah Cair dan Padat, yang mewakili jenis obat yang berbeda. Kelas tingkat ketiga adalah Resep, yang mewakili resep yang dibuat oleh dokter untuk pasien. Kelas tingkat keempat adalah Pasien, yang mewakili pasien yang menggunakan sistem. Hubungan antara kelas-kelas ditunjukkan oleh panah. Panah yang mengarah dari kelas yang lebih tinggi ke kelas yang lebih rendah menunjukkan bahwa kelas yang lebih rendah adalah bagian dari kelas yang lebih tinggi. Obat adalah kelas induk yang memiliki dua kelas turunan, yaitu Cair dan Padat. Kelas Cair dan Padat mewakili jenis obat yang berbeda. Kelas Resep adalah kelas turunan dari kelas Obat dan Pasien. Kelas Resep mewakili resep yang dibuat oleh dokter untuk pasien. Kelas Pasien adalah kelas induk yang tidak memiliki kelas turunan.
 ### PENJELASAN CODINGAN
+
+#### CLASS DATABASE
+![image](https://github.com/asantiap/PA_PBO_KELOMPOK2/assets/121863819/f4a1a620-54ab-4650-8245-e69548b7bb0e)
+Gambar diatas merupakan librari untuk menghubungkann dengan  database
+![image](https://github.com/asantiap/PA_PBO_KELOMPOK2/assets/121863819/1d6d790a-2bae-411f-9d81-d48c8c0ffee2)
+![image](https://github.com/asantiap/PA_PBO_KELOMPOK2/assets/121863819/1815fe9f-24fe-43b7-ad52-53c1549ed4b5)
+![image](https://github.com/asantiap/PA_PBO_KELOMPOK2/assets/121863819/780191fd-77c4-467f-a185-db9559307cd0)
+![image](https://github.com/asantiap/PA_PBO_KELOMPOK2/assets/121863819/af166d37-f0e8-4786-ae96-4591723a3d00)
+![image](https://github.com/asantiap/PA_PBO_KELOMPOK2/assets/121863819/7172094b-74b8-4b31-a892-b39aec82f237)
+
 #### CLASS RESEP
 ![image](https://github.com/asantiap/PA_PBO_KELOMPOK2/assets/121863819/06d81fed-65cf-450d-bd84-3ab78b39dc93)
 
@@ -38,5 +48,5 @@ Gambar diatas merupakan Deklarasi metode delete() yang akan menghapus rekaman pa
 ![image](https://github.com/asantiap/PA_PBO_KELOMPOK2/assets/121863819/80dbbfc7-9f0f-49da-a419-8729965e61cf)
 ![image](https://github.com/asantiap/PA_PBO_KELOMPOK2/assets/121863819/09fc99d7-6916-41f2-a172-5bc1def727c3)
 
-#### CLASS DATABASE
+
 
