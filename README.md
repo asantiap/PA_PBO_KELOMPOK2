@@ -20,8 +20,9 @@
 ![image](https://github.com/asantiap/PA_PBO_KELOMPOK2/assets/121863819/ef193784-64b1-4c01-b1db-280b95b81344)
 	Kelas teratas adalah Obat, yang mewakili semua obat yang tersedia di sistem. Kelas tingkat kedua adalah Cair dan Padat, yang mewakili jenis obat yang berbeda. Kelas tingkat ketiga adalah Resep, yang mewakili resep yang dibuat oleh dokter untuk pasien. Kelas tingkat keempat adalah Pasien, yang mewakili pasien yang menggunakan sistem. Hubungan antara kelas-kelas ditunjukkan oleh panah. Panah yang mengarah dari kelas yang lebih tinggi ke kelas yang lebih rendah menunjukkan bahwa kelas yang lebih rendah adalah bagian dari kelas yang lebih tinggi. Obat adalah kelas induk yang memiliki dua kelas turunan, yaitu Cair dan Padat. Kelas Cair dan Padat mewakili jenis obat yang berbeda. Kelas Resep adalah kelas turunan dari kelas Obat dan Pasien. Kelas Resep mewakili resep yang dibuat oleh dokter untuk pasien. Kelas Pasien adalah kelas induk yang tidak memiliki kelas turunan.
 ### PENJELASAN CODINGAN
+#### -ENTITAS-
 
-#### CLASS DATABASE
+#### 1. CLASS DATABASE
 ![image](https://github.com/asantiap/PA_PBO_KELOMPOK2/assets/121863819/f4a1a620-54ab-4650-8245-e69548b7bb0e)
 
 Gambar diatas merupakan librari untuk menghubungkann dengan  database
@@ -31,7 +32,7 @@ Gambar diatas merupakan librari untuk menghubungkann dengan  database
 ![image](https://github.com/asantiap/PA_PBO_KELOMPOK2/assets/121863819/af166d37-f0e8-4786-ae96-4591723a3d00)
 ![image](https://github.com/asantiap/PA_PBO_KELOMPOK2/assets/121863819/7172094b-74b8-4b31-a892-b39aec82f237)
 
-#### CLASS APOTEKER
+#### 2. CLASS APOTEKER
 ![image](https://github.com/asantiap/PA_PBO_KELOMPOK2/assets/121863819/2773d307-3a45-4078-9ec3-22e89be94948)
 
 ![image](https://github.com/asantiap/PA_PBO_KELOMPOK2/assets/121863819/b45e785a-dfec-4332-8f9a-1b2aecdc086a)
@@ -64,7 +65,7 @@ Eksekusi pernyataan SQL dengan executeUpdate() dan mengembalikan keberhasilan op
 Jika terjadi kesalahan saat eksekusi, akan menampilkan pesan kesalahan (error) melalui displayErrors(ex).
 Terakhir, koneksi database ditutup, baik operasi berhasil maupun tidak.
 
-#### CLASS OBAT
+#### 3. CLASS OBAT
 ![image](https://github.com/asantiap/PA_PBO_KELOMPOK2/assets/121863819/1c0a6484-456a-4dc2-9f9d-ce09b2ed295b)
 
 Kelas Obat adalah entitas yang merepresentasikan informasi tentang obat di dalam sistem.
@@ -108,7 +109,7 @@ Mengatur nilai parameter dalam pernyataan yang disiapkan menggunakan PreparedSta
 Eksekusi pernyataan SQL menggunakan executeUpdate() dan mengembalikan keberhasilan operasi tersebut dalam bentuk boolean.
 Jika terjadi kesalahan saat eksekusi, akan menampilkan pesan kesalahan (error).
 
-#### CLASS CAIR
+#### 4. CLASS CAIR
 ![image](https://github.com/asantiap/PA_PBO_KELOMPOK2/assets/121863819/9edb5b5c-2b72-4dfb-af05-7c61bbbb8a4a)
 
 Kelas Cair merupakan entitas yang merepresentasikan jenis obat cair. Kelas ini memiliki satu atribut yaitu mL, yang menyimpan informasi mili liter dari obat cair. Kelas Cair mewarisi atribut dari kelas Obat
@@ -139,7 +140,76 @@ Mengatur nilai parameter dalam pernyataan yang telah disiapkan menggunakan Prepa
 Eksekusi pernyataan SQL dengan executeUpdate() dan mengembalikan keberhasilan operasi tersebut dalam bentuk boolean.
 Jika terjadi kesalahan saat eksekusi, akan menampilkan pesan kesalahan (error) melalui displayErrors(ex).
 
-#### CLASS RESEP
+#### 5. CLASS PADAT
+
+![image](https://github.com/asantiap/PA_PBO_KELOMPOK2/assets/121863819/cddc80ac-794c-4288-89c5-8c33810ed10d)
+
+Kelas Padat adalah sebuah entitas yang merepresentasikan jenis obat dengan sifat padat.
+Kelas ini memiliki satu atribut tambahan yaitu bentuk, yang menyimpan informasi mengenai bentuk fisik dari obat jenis padat.
+Kelas Padat mewarisi atribut yang ada pada kelas Obat.
+
+![image](https://github.com/asantiap/PA_PBO_KELOMPOK2/assets/121863819/2ae7fe1c-6f18-41af-b07b-59a04a9f3fb8)
+
+Metode create() di-override dari kelas Obat. Fungsinya adalah untuk menambahkan data obat jenis padat ke dalam database.
+Membuka koneksi ke database.
+Membuat pernyataan SQL INSERT untuk memasukkan data ke dalam tabel "padat".
+Mengatur nilai parameter dalam pernyataan yang telah disiapkan menggunakan PreparedStatement.
+Eksekusi pernyataan SQL dengan executeUpdate() dan mengembalikan keberhasilan operasi tersebut dalam bentuk boolean.
+Jika terjadi kesalahan saat eksekusi, akan menampilkan pesan kesalahan (error).
+
+![image](https://github.com/asantiap/PA_PBO_KELOMPOK2/assets/121863819/08d30aab-cac9-4cda-97fb-e8b52aad4d33)
+
+Metode update() di-override dari kelas Obat. Fungsinya adalah untuk memperbarui data obat jenis padat yang sudah ada dalam database.
+Membuka koneksi ke database.
+Membuat pernyataan SQL UPDATE untuk memperbarui data dalam tabel "padat" berdasarkan ID obat.
+Mengatur nilai parameter dalam pernyataan yang telah disiapkan menggunakan PreparedStatement.
+Eksekusi pernyataan SQL dengan executeUpdate() dan mengembalikan keberhasilan operasi tersebut dalam bentuk boolean.
+Jika terjadi kesalahan saat eksekusi, akan menampilkan pesan kesalahan (error).
+
+![image](https://github.com/asantiap/PA_PBO_KELOMPOK2/assets/121863819/2ad40e6a-d1a5-49e2-902d-e6b4668f6a88)
+
+Metode delete() di-override dari kelas Obat. Fungsinya adalah untuk menghapus data obat jenis padat dari database berdasarkan ID obat yang diberikan.
+Membuka koneksi ke database.
+Membuat pernyataan SQL DELETE untuk menghapus data dari tabel "padat" berdasarkan ID obat.
+Mengatur nilai parameter dalam pernyataan yang telah disiapkan menggunakan PreparedStatement.
+Eksekusi pernyataan SQL dengan executeUpdate() dan mengembalikan keberhasilan operasi tersebut dalam bentuk boolean.
+Jika terjadi kesalahan saat eksekusi, akan menampilkan pesan kesalahan (error).
+
+#### 6. CLASS PASIEN
+![image](https://github.com/asantiap/PA_PBO_KELOMPOK2/assets/121863819/733dbbf2-9e7c-48d0-8a15-dfdd5c62d565)
+
+Kelas Pasien adalah entitas yang berperan dalam merepresentasikan data pasien dalam sistem.
+Memiliki beberapa atribut seperti id_pasien (ID pasien), nama_pasien (nama pasien), alamat (alamat pasien), nomorTelepon (nomor telepon pasien), dan email (email pasien).
+Kelas Pasien meng-extends kelas Database, yang kemungkinan berisi fungsionalitas untuk berinteraksi dengan database.
+
+![image](https://github.com/asantiap/PA_PBO_KELOMPOK2/assets/121863819/24788eb5-dda6-4ca2-9a30-92ca0fa0d08b)
+
+Metode create() bertanggung jawab untuk menambahkan data pasien baru ke dalam database.
+Membuka koneksi ke database.
+Membuat pernyataan SQL INSERT untuk memasukkan data ke dalam tabel "pasien".
+Mengatur nilai parameter dalam pernyataan yang telah disiapkan menggunakan PreparedStatement.
+Eksekusi pernyataan SQL menggunakan executeUpdate() dan mengembalikan keberhasilan operasi tersebut dalam bentuk boolean.
+Jika terjadi kesalahan saat eksekusi, akan menampilkan pesan kesalahan (error). Koneksi ke database ditutup dalam blok finally.
+
+![image](https://github.com/asantiap/PA_PBO_KELOMPOK2/assets/121863819/158ca6da-797e-4592-8b48-899282260292)
+
+Metode update() bertanggung jawab untuk memperbarui data pasien yang sudah ada dalam database.
+Membuka koneksi ke database.
+Membuat pernyataan SQL UPDATE untuk memperbarui data dalam tabel "pasien" berdasarkan ID pasien.
+Mengatur nilai parameter dalam pernyataan yang telah disiapkan menggunakan PreparedStatement.
+Eksekusi pernyataan SQL dengan executeUpdate() dan mengembalikan keberhasilan operasi tersebut dalam bentuk boolean.
+Jika terjadi kesalahan saat eksekusi, akan menampilkan pesan kesalahan (error). Koneksi ke database ditutup dalam blok finally.
+
+![image](https://github.com/asantiap/PA_PBO_KELOMPOK2/assets/121863819/bc1d671a-036c-400d-836e-1624092bc02b)
+
+Metode delete() bertanggung jawab untuk menghapus data pasien dari database berdasarkan ID pasien yang diberikan.
+Membuka koneksi ke database.
+Membuat pernyataan SQL DELETE untuk menghapus data dari tabel "pasien" berdasarkan ID pasien.
+Mengatur nilai parameter dalam pernyataan yang telah disiapkan menggunakan PreparedStatement.
+Eksekusi pernyataan SQL dengan executeUpdate() dan mengembalikan keberhasilan operasi tersebut dalam bentuk boolean.
+Jika terjadi kesalahan saat eksekusi, akan menampilkan pesan kesalahan (error). Koneksi ke database ditutup dalam blok finally.
+
+#### 7. CLASS RESEP
 ![image](https://github.com/asantiap/PA_PBO_KELOMPOK2/assets/121863819/06d81fed-65cf-450d-bd84-3ab78b39dc93)
 
 pada line 16 kelas Resep dideklarasikan sebagai kelas akhir yang mewarisi dari kelas Database. kemudian line 17 sampai line 20 dalah deklarasi variabel anggota yang menggambarkan atribut dari objek Resep. 
