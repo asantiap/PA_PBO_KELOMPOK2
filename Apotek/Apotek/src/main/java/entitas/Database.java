@@ -26,7 +26,7 @@ public class Database {
     public final void openConnection() {
         try {
             // Bentuk stringnya: "jdbc:mysql://dbhost/dbname?user=username&password=password"
-            this.connection = DriverManager.getConnection("jdbc:mysql://localhost/apotek1?user=root&password=");
+            this.connection = DriverManager.getConnection("jdbc:mysql://localhost/apotek?user=root&password=");
         } catch (SQLException ex) {
             this.displayErrors(ex);
         }
