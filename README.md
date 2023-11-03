@@ -19,3 +19,12 @@
 ### HIRARKI 
 ![image](https://github.com/asantiap/PA_PBO_KELOMPOK2/assets/121863819/ef193784-64b1-4c01-b1db-280b95b81344)
 	Kelas teratas adalah Obat, yang mewakili semua obat yang tersedia di sistem. Kelas tingkat kedua adalah Cair dan Padat, yang mewakili jenis obat yang berbeda. Kelas tingkat ketiga adalah Resep, yang mewakili resep yang dibuat oleh dokter untuk pasien. Kelas tingkat keempat adalah Pasien, yang mewakili pasien yang menggunakan sistem. Hubungan antara kelas-kelas ditunjukkan oleh panah. Panah yang mengarah dari kelas yang lebih tinggi ke kelas yang lebih rendah menunjukkan bahwa kelas yang lebih rendah adalah bagian dari kelas yang lebih tinggi. Obat adalah kelas induk yang memiliki dua kelas turunan, yaitu Cair dan Padat. Kelas Cair dan Padat mewakili jenis obat yang berbeda. Kelas Resep adalah kelas turunan dari kelas Obat dan Pasien. Kelas Resep mewakili resep yang dibuat oleh dokter untuk pasien. Kelas Pasien adalah kelas induk yang tidak memiliki kelas turunan.
+### PENJELASAN CODINAGN
+#### CLASS RESEP
+![image](https://github.com/asantiap/PA_PBO_KELOMPOK2/assets/121863819/06d81fed-65cf-450d-bd84-3ab78b39dc93)
+pada line 16 kelas Resep dideklarasikan sebagai kelas akhir yang mewarisi dari kelas Database. kemudian line 17 sampai line 20 dalah deklarasi variabel anggota yang menggambarkan atribut dari objek Resep. 
+![image](https://github.com/asantiap/PA_PBO_KELOMPOK2/assets/121863819/cd134985-45b4-476e-9ea1-ac620673ef8a)
+Gambar diatas merupakan Deklarasi metode create() yang akan menciptakan rekaman baru pada tabel resep. Metode ini akan mengembalikan true jika operasi berhasil dan false jika tidak. Metode ini akan menjalankan operasi CRUD ini dengan menggunakan teknik prepared statement.
+![image](https://github.com/asantiap/PA_PBO_KELOMPOK2/assets/121863819/dff5b73b-69c6-46c5-8e75-ba71ed406ebe)
+Gambar diatas merupakan Deklarasi metode update() yang akan mengubah rekaman pada tabel resep. Metode ini akan mengembalikan true jika operasi berhasil dan false jika tidak. Metode ini akan menjalankan operasi CRUD ini dengan menggunakan teknik prepared statement.
+![image](https://github.com/asantiap/PA_PBO_KELOMPOK2/assets/121863819/e8d1d256-0011-43d8-99d6-aea3948b2cb7)
