@@ -64,6 +64,37 @@ Eksekusi pernyataan SQL dengan executeUpdate() dan mengembalikan keberhasilan op
 Jika terjadi kesalahan saat eksekusi, akan menampilkan pesan kesalahan (error) melalui displayErrors(ex).
 Terakhir, koneksi database ditutup, baik operasi berhasil maupun tidak.
 
+#### CLASS CAIR
+![image](https://github.com/asantiap/PA_PBO_KELOMPOK2/assets/121863819/9edb5b5c-2b72-4dfb-af05-7c61bbbb8a4a)
+
+Kelas Cair merupakan entitas yang merepresentasikan jenis obat cair. Kelas ini memiliki satu atribut yaitu mL, yang menyimpan informasi mili liter dari obat cair. Kelas Cair mewarisi atribut dari kelas Obat
+
+![image](https://github.com/asantiap/PA_PBO_KELOMPOK2/assets/121863819/b2b00f99-ef12-4401-a0b9-4e1253d54847)
+
+Metode create() di-override dari kelas Obat. Metode ini bertanggung jawab untuk menambahkan data obat cair ke dalam database.
+Memulai dengan membuka koneksi ke database.
+Membuat pernyataan SQL INSERT untuk memasukkan data ke dalam tabel "cair".
+Mengatur nilai parameter dalam pernyataan yang telah disiapkan menggunakan PreparedStatement.
+Eksekusi pernyataan SQL dengan executeUpdate() dan mengembalikan keberhasilan operasi tersebut dalam bentuk boolean.
+Jika terjadi kesalahan saat eksekusi, akan menampilkan pesan kesalahan (error) melalui displayErrors(ex).
+
+![image](https://github.com/asantiap/PA_PBO_KELOMPOK2/assets/121863819/69057c69-7be7-4d27-9cab-9fd2185ad8d9)
+
+Metode update() di-override dari kelas Obat. Metode ini bertanggung jawab untuk memperbarui data obat cair yang sudah ada dalam database.
+Mulai dengan membuka koneksi ke database.
+Membuat pernyataan SQL UPDATE untuk memperbarui data dalam tabel "cair" berdasarkan ID obat.
+Mengatur nilai parameter dalam pernyataan yang telah disiapkan menggunakan PreparedStatement.
+Eksekusi pernyataan SQL dengan executeUpdate() dan mengembalikan keberhasilan operasi tersebut dalam bentuk boolean.
+Jika terjadi kesalahan saat eksekusi, akan menampilkan pesan kesalahan (error) melalui displayErrors(ex).
+
+![image](https://github.com/asantiap/PA_PBO_KELOMPOK2/assets/121863819/56a7b7d9-5dd0-4455-85a2-e3270c091250)
+Metode delete() di-override dari kelas Obat. Metode ini bertanggung jawab untuk menghapus data obat cair dari database berdasarkan ID obat.
+Membuka koneksi ke database.
+Membuat pernyataan SQL DELETE untuk menghapus data dari tabel "cair" berdasarkan ID obat.
+Mengatur nilai parameter dalam pernyataan yang telah disiapkan menggunakan PreparedStatement.
+Eksekusi pernyataan SQL dengan executeUpdate() dan mengembalikan keberhasilan operasi tersebut dalam bentuk boolean.
+Jika terjadi kesalahan saat eksekusi, akan menampilkan pesan kesalahan (error) melalui displayErrors(ex).
+
 #### CLASS RESEP
 ![image](https://github.com/asantiap/PA_PBO_KELOMPOK2/assets/121863819/06d81fed-65cf-450d-bd84-3ab78b39dc93)
 
