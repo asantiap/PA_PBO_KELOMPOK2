@@ -1,4 +1,7 @@
-# PA_PBO_KELOMPOK2
+# PA_PBO_KELOMPOK 14
+## NAMA KELOMPOK :
+### 1. Anggraini Sagita Santia Putri (2209116043)
+### 2. Muhammad Nabil		     (2209116046)
 ## PENGELOLAAN DATA APOTEK PADA RUMAH SAKIT
 ### DESKRIPSI STUDI KASUS
   Apotek ini adalah sebuah apotek yang tergabung pada Rumah sakit di pusat kota. Apotek ini menyediakan berbagai obat-obatan. Mereka memiliki sistem pengelolaan data obat yang sangat penting untuk menjaga operasi yang efisien dan menyediakan pelayanan yang baik . Apotek ini memiliki persediaan obat yang cukup dan bervariasi. 
