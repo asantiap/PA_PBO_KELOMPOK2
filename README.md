@@ -21,6 +21,7 @@
 	Kelas teratas adalah Obat, yang mewakili semua obat yang tersedia di sistem. Kelas tingkat kedua adalah Cair dan Padat, yang mewakili jenis obat yang berbeda. Kelas tingkat ketiga adalah Resep, yang mewakili resep yang dibuat oleh dokter untuk pasien. Kelas tingkat keempat adalah Pasien, yang mewakili pasien yang menggunakan sistem. Hubungan antara kelas-kelas ditunjukkan oleh panah. Panah yang mengarah dari kelas yang lebih tinggi ke kelas yang lebih rendah menunjukkan bahwa kelas yang lebih rendah adalah bagian dari kelas yang lebih tinggi. Obat adalah kelas induk yang memiliki dua kelas turunan, yaitu Cair dan Padat. Kelas Cair dan Padat mewakili jenis obat yang berbeda. Kelas Resep adalah kelas turunan dari kelas Obat dan Pasien. Kelas Resep mewakili resep yang dibuat oleh dokter untuk pasien. Kelas Pasien adalah kelas induk yang tidak memiliki kelas turunan.
 ### PENJELASAN CODINGAN
 #### -ENTITAS-
+![image](https://github.com/asantiap/PA_PBO_KELOMPOK2/assets/121863819/7d224db9-f8ff-45f8-a4a3-2af092aac723)
 
 #### 1. CLASS DATABASE
 ![image](https://github.com/asantiap/PA_PBO_KELOMPOK2/assets/121863819/f4a1a620-54ab-4650-8245-e69548b7bb0e)
@@ -226,5 +227,84 @@ Gambar diatas merupakan Deklarasi metode delete() yang akan menghapus rekaman pa
 ![image](https://github.com/asantiap/PA_PBO_KELOMPOK2/assets/121863819/4aa47507-74a4-48c2-9d09-96d5da569d0d)
 ![image](https://github.com/asantiap/PA_PBO_KELOMPOK2/assets/121863819/80dbbfc7-9f0f-49da-a419-8729965e61cf)
 ![image](https://github.com/asantiap/PA_PBO_KELOMPOK2/assets/121863819/09fc99d7-6916-41f2-a172-5bc1def727c3)
+
+### OUTPUT
+![image](https://github.com/asantiap/PA_PBO_KELOMPOK2/assets/121863819/414e9aec-d7f0-4c5d-9bc2-e5124e0c8ec3)
+
+Gambar diatas merupakan gambar tampilan awal dari program , user diminta untuk memilih dari 2 menu tersebut
+
+![image](https://github.com/asantiap/PA_PBO_KELOMPOK2/assets/121863819/e984ca82-37b7-41b4-818a-1a1ed3859640)
+
+Jika user memilih menu apoteker maka user diminta untuk login terlebih dahulu dengan menginputkan username dan passwor, username dan password  tersebut diambil dari email dan id yang telah ditentukan
+
+![image](https://github.com/asantiap/PA_PBO_KELOMPOK2/assets/121863819/c09de81e-fc69-411d-810d-934aff1d5015)
+
+jika user tersebut salah menginputkan maka akan muncul notifikasi seperti gambar diatas
+
+![image](https://github.com/asantiap/PA_PBO_KELOMPOK2/assets/121863819/445b760f-8aea-4d12-94f6-debfe3aa3bfb)
+
+Kemudian jika user telah berhasil login, akan muncul tampilan seperti gambar diatas
+
+![image](https://github.com/asantiap/PA_PBO_KELOMPOK2/assets/121863819/11fad778-aace-42de-87d2-31ec8f42afa2)
+
+jika user memilih menu apoteker maka akan muncul menu crud dari data apoteker
+
+![image](https://github.com/asantiap/PA_PBO_KELOMPOK2/assets/121863819/ed60e173-bcec-45d1-997f-8cc0eb73d87d)
+
+Jika user memilih menu resep maka akan muncul crud dari dari data resep
+
+![image](https://github.com/asantiap/PA_PBO_KELOMPOK2/assets/121863819/9d9f02bd-279b-401d-ab90-372739676287)
+
+Jika user memilih menu oobat maka akan muncul crud dari data obat
+
+![image](https://github.com/asantiap/PA_PBO_KELOMPOK2/assets/121863819/a2a268cd-e8b3-4aa9-9ff9-65f5cc15aaf6)
+
+Jika user memilih menu oobat maka akan muncul crud dari data pasien
+
+![image](https://github.com/asantiap/PA_PBO_KELOMPOK2/assets/121863819/7d2229b9-f681-473d-b593-aa92edeba8fe)
+
+Jika user memilih menu pasien maka hanya muncul 2 pilihan menu yaitu resep dan obat
+
+![image](https://github.com/asantiap/PA_PBO_KELOMPOK2/assets/121863819/a46b505d-eb12-4074-997a-8ff9be77098b)
+
+jika user memilih resep maka user hanya bisa mencari resep / data pasien
+
+![image](https://github.com/asantiap/PA_PBO_KELOMPOK2/assets/121863819/c6a9ce03-9eac-4390-8312-f24538f1006f)
+
+jika user memilih obat user hanya dapat mecari dan melihat data obat saja
+
+### KESIMPULAN
+Program tersebut terdiri dari beberapa kelas yang mengelola data terkait entitas medis dalam suatu sistem. Kode tersebut menggunakan JDBC (Java Database Connectivity) untuk berinteraksi dengan database. Berikut adalah ringkasan programnya:
+
+1. **Kelas Resep:** 
+   - Menangani informasi resep obat.
+   - Memiliki fungsi-fungsi untuk membuat, memperbarui, dan menghapus resep dari database.
+
+2. **Kelas Apoteker:**
+   - Menyimpan data apoteker yang terlibat dalam pengelolaan resep obat.
+   - Fungsi-fungsi untuk membuat, memperbarui, dan menghapus data apoteker dari database.
+
+3. **Kelas Cair:**
+   - Merepresentasikan obat dalam bentuk cair.
+   - Memiliki fungsi-fungsi untuk menambahkan, memperbarui, dan menghapus data obat cair dari database.
+
+4. **Kelas Obat:**
+   - Menangani data obat secara umum.
+   - Memiliki fungsi-fungsi untuk menambahkan, mencari, memperbarui, dan menghapus data obat dari database.
+
+5. **Kelas Padat:**
+   - Mewakili obat dalam bentuk padat.
+   - Fungsi-fungsi untuk menambahkan, memperbarui, dan menghapus data obat padat dari database.
+
+6. **Kelas Pasien:**
+   - Menyimpan informasi pasien.
+   - Memiliki fungsi-fungsi untuk menambahkan, memperbarui, dan menghapus data pasien dari database.
+
+Setiap kelas memiliki metode-metode untuk interaksi dengan database, seperti menambahkan data baru, memperbarui data yang ada, dan menghapus data yang tidak diperlukan lagi. Mereka menggunakan PreparedStatement untuk memastikan keamanan dan mengurangi risiko SQL injection.
+
+Penggunaan pewarisan (inheritance) memungkinkan beberapa kelas untuk membagi fungsionalitas yang sama yang ada pada kelas induk mereka (seperti kelas `Obat` yang digunakan sebagai dasar untuk kelas-kelas spesifik lainnya).
+
+Program ini dirancang untuk mengelola dan memelihara informasi medis terkait pasien, resep, obat, dan entitas medis lainnya dalam database yang terkait. Dengan menggunakan JDBC, program ini memastikan pengelolaan data yang efisien, aman, dan terstruktur dengan baik dalam sistem basis data.
+
 
 
